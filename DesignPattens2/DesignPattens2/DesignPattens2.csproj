@@ -57,11 +57,16 @@
     <Compile Include="Capitulo03\Estado.cs" />
     <Compile Include="Capitulo03\Historico.cs" />
     <Compile Include="Capitulo03\TipoContrato.cs" />
+    <Compile Include="Capitulo04\IExpressao.cs" />
+    <Compile Include="Capitulo04\Numero.cs" />
+    <Compile Include="Capitulo04\Soma.cs" />
+    <Compile Include="Capitulo04\Subtracao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
