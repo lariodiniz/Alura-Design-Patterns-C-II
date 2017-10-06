@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPattens2.Capitulo05;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,7 @@ namespace DesignPattens2.Capitulo04
     {
 
         int Avalia();
+
+        void Aceita(IVisitor impressora);
     }
 }

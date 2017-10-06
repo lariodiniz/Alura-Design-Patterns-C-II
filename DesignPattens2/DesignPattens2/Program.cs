@@ -2,6 +2,7 @@
 using DesignPattens2.Capitulo02;
 using DesignPattens2.Capitulo03;
 using DesignPattens2.Capitulo04;
+using DesignPattens2.Capitulo05;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -72,6 +73,17 @@ namespace DesignPattens2
 
             Console.WriteLine(funcao());
             */
+
+            /* Aula 05 */
+
+            IExpressao esquerda = new Soma(new Numero(1), new Numero(10));
+            IExpressao direita = new Subtracao(new Numero(20), new Numero(10));
+
+            IExpressao soma = new Soma(esquerda, direita);
+
+            Console.WriteLine(soma.Avalia());
+            ImpressoraVisitor impressora = new ImpressoraVisitor();
+            soma.Aceita(impressora);
         }
     }
 }

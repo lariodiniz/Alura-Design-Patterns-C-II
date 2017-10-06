@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPattens2.Capitulo05;
 
 namespace DesignPattens2.Capitulo04
 {
@@ -22,6 +23,11 @@ namespace DesignPattens2.Capitulo04
             int valorEsquerda = this.Esquerda.Avalia();
             int valorDireita = this.Direita.Avalia();
             return valorEsquerda * valorDireita;
+        }
+
+        public void Aceita(ImpressoraVisitor impressora)
+        {
+            throw new NotImplementedException();
         }
     }
 }

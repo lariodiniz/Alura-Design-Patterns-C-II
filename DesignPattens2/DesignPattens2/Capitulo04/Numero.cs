@@ -3,21 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DesignPattens2.Capitulo05;
 
 namespace DesignPattens2.Capitulo04
 {
     class Numero : IExpressao
     {
-        private int numero;
+        
+        public int Valor { get; private set; }
 
-        public Numero(int num)
+        public Numero(int numero)
         {
-            this.numero = num;            
+            this.Valor = numero;            
         }
 
         public int Avalia()
         {
-            return this.numero;
+            return this.Valor;
+        }
+
+        public void Aceita(ImpressoraVisitor impressora)
+        {
+            impressora.ImprimeNumero(this);
         }
     }
 }
