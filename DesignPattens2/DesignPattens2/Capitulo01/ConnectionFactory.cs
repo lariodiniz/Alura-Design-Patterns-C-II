@@ -18,5 +18,6 @@ namespace DesignPattens2.Capitulo01
 
             return conexao;
         }
+
     }
 }

@@ -42,6 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capitulo01\ConnectionFactory.cs" />
+    <Compile Include="Capitulo02\Do.cs" />
+    <Compile Include="Capitulo02\Fa.cs" />
+    <Compile Include="Capitulo02\INota.cs" />
+    <Compile Include="Capitulo02\La.cs" />
+    <Compile Include="Capitulo02\Mi.cs" />
+    <Compile Include="Capitulo02\NotasMusicais.cs" />
+    <Compile Include="Capitulo02\Piano.cs" />
+    <Compile Include="Capitulo02\Re.cs" />
+    <Compile Include="Capitulo02\Si.cs" />
+    <Compile Include="Capitulo02\Sol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
