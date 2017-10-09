@@ -25,7 +25,7 @@ namespace DesignPattens2.Capitulo04
             return valorEsquerda + valorDireita;
         }
 
-        public void Aceita(ImpressoraVisitor impressora)
+        public void Aceita(IVisitor impressora)
         {
             impressora.ImprimeSoma(this);
         }

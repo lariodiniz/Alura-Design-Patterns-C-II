@@ -64,8 +64,15 @@
     <Compile Include="Capitulo04\RaizQuadrada.cs" />
     <Compile Include="Capitulo04\Soma.cs" />
     <Compile Include="Capitulo04\Subtracao.cs" />
+    <Compile Include="Capitulo05\ImpressoraPreFixa.cs" />
     <Compile Include="Capitulo05\ImpressoraVisitor.cs" />
     <Compile Include="Capitulo05\IVisitor.cs" />
+    <Compile Include="Capitulo06\EnviaPorEmail.cs" />
+    <Compile Include="Capitulo06\EnviaPorSMS.cs" />
+    <Compile Include="Capitulo06\IEnviador.cs" />
+    <Compile Include="Capitulo06\IMensagem.cs" />
+    <Compile Include="Capitulo06\MensagemCliente.cs" />
+    <Compile Include="Capitulo06\MensagemAdministrativa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -22,7 +22,7 @@ namespace DesignPattens2.Capitulo04
             return this.Valor;
         }
 
-        public void Aceita(ImpressoraVisitor impressora)
+        public void Aceita(IVisitor impressora)
         {
             impressora.ImprimeNumero(this);
         }
