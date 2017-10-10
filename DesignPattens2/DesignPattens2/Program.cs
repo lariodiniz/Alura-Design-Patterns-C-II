@@ -5,14 +5,17 @@ using DesignPattens2.Capitulo04;
 using DesignPattens2.Capitulo05;
 using DesignPattens2.Capitulo06;
 using DesignPattens2.Capitulo07;
+using DesignPattens2.Capitulo08;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace DesignPattens2
 {
@@ -98,7 +101,7 @@ namespace DesignPattens2
             mensagem.Envia();
             */
 
-            /* Aula 07 */
+            /* Aula 07 
             FilaDeTrabalho fila = new FilaDeTrabalho();
             Pedido pedido1 = new Pedido("Mauricio", 100.0);
             Pedido pedido2 = new Pedido("Marcelo", 200.0);
@@ -108,7 +111,17 @@ namespace DesignPattens2
             fila.Adiciona(new FinalizaPedido(pedido1));
 
             fila.Processa();
+            */
 
+            /* Aula 08 */
+            Cliente cliente = new Cliente();
+            cliente.Nome = "victor";
+            cliente.Endereco = "Rua Vergueiro";
+            cliente.DataDeNascimento = DateTime.Now;
+
+            String xml = new GeradorDeXml().GeraXML(cliente);
+
+            Console.WriteLine(xml);
         }
     }
 }
