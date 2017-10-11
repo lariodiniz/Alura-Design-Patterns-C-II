@@ -81,6 +81,8 @@
     <Compile Include="Capitulo07\Pedido.cs" />
     <Compile Include="Capitulo08\Cliente.cs" />
     <Compile Include="Capitulo08\GeradorDeXml.cs" />
+    <Compile Include="Capitulo09\EmpresaFacade.cs" />
+    <Compile Include="Capitulo09\EmpresaFacadeSingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

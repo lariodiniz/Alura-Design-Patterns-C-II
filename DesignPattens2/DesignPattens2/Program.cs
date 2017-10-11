@@ -6,6 +6,7 @@ using DesignPattens2.Capitulo05;
 using DesignPattens2.Capitulo06;
 using DesignPattens2.Capitulo07;
 using DesignPattens2.Capitulo08;
+using DesignPattens2.Capitulo09;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -113,7 +114,7 @@ namespace DesignPattens2
             fila.Processa();
             */
 
-            /* Aula 08 */
+            /* Aula 08 
             Cliente cliente = new Cliente();
             cliente.Nome = "victor";
             cliente.Endereco = "Rua Vergueiro";
@@ -122,6 +123,16 @@ namespace DesignPattens2
             String xml = new GeradorDeXml().GeraXML(cliente);
 
             Console.WriteLine(xml);
+            */
+
+            /* Aula 09 */
+
+            string cpf = "1234";
+            EmpresaFacade facade = new EmpresaFacadeSingleton().Instancia;
+            Cliente cliente = facade.BuscaCliente(cpf);
+
+            var fatura = facade.CriaFatura(cliente, 5000);
+            facade.GeraCobranca(tipo, Boleto, fatura);
         }
     }
 }
